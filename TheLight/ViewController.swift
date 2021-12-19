@@ -6,30 +6,41 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
-    var isLightOn = true
+    var flash = true
     
-    override var prefersStatusBarHidden: Bool {
+    @IBAction func buttonPressed (_ sender: Any) {
+        flash = !flash
+        updateView()
+    }
+
+    func updateView() {
+        let device = AVCaptureDevice.default(for: AVMediaType.video)
+        
+        if let dev = device, dev.hasTorch {
+            view.backgroundColor = .black
+            do {
+                try dev.lockForConfiguration()
+                dev.torchMode = flash ? .on : .off
+                dev.unlockForConfiguration()
+            } catch {
+                print(error)
+            }
+        } else {
+            view.backgroundColor = flash ? .white : .black
+        }
+    }
+    
+    override var prefersStatusBarHidden: Bool{
         return true
     }
     
-    // MARK: - Methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateUI()
-    }
-    
-    fileprivate func updateUI() {
-        view.backgroundColor = isLightOn ? .white : .black
-    }
-    
-
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        isLightOn.toggle()
-        updateUI()
-    }
-    
-    }
+        updateView()
+}
+}

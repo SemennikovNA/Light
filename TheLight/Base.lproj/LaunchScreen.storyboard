@@ -28,14 +28,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="9u2-D9-KbX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="0hC-QQ-jVo"/>
-                            <constraint firstItem="SDW-ug-e9Z" firstAttribute="top" secondItem="9u2-D9-KbX" secondAttribute="bottom" constant="17" id="4Ql-Lp-btP"/>
-                            <constraint firstItem="SDW-ug-e9Z" firstAttribute="top" secondItem="9u2-D9-KbX" secondAttribute="bottom" constant="17" id="5t0-ST-qxi"/>
-                            <constraint firstItem="9u2-D9-KbX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="140" id="A15-F9-Fl5"/>
-                            <constraint firstItem="SDW-ug-e9Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="EgP-UM-lI3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SDW-ug-e9Z" secondAttribute="bottom" constant="25" id="Stn-te-xlS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SDW-ug-e9Z" secondAttribute="trailing" constant="57" id="Zyp-3H-BG3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9u2-D9-KbX" secondAttribute="trailing" constant="75" id="mkU-Zn-xBh"/>
+                            <constraint firstItem="9u2-D9-KbX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="140" id="0FT-Cb-MXl"/>
+                            <constraint firstItem="SDW-ug-e9Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="6Na-hH-aVv"/>
+                            <constraint firstItem="9u2-D9-KbX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="IuX-CY-Rkl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SDW-ug-e9Z" secondAttribute="bottom" constant="25" id="YQO-nZ-L6e"/>
+                            <constraint firstItem="SDW-ug-e9Z" firstAttribute="top" secondItem="9u2-D9-KbX" secondAttribute="bottom" constant="17" id="Yqq-8R-WmJ"/>
+                            <constraint firstItem="SDW-ug-e9Z" firstAttribute="top" secondItem="9u2-D9-KbX" secondAttribute="bottom" constant="17" id="k5o-W6-Izn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SDW-ug-e9Z" secondAttribute="trailing" constant="57" id="ppq-c0-Or2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9u2-D9-KbX" secondAttribute="trailing" constant="75" id="s6T-Sa-p3J"/>
                         </constraints>
                     </view>
                 </viewController>
