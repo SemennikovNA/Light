@@ -1,3 +1,4 @@
-# Light
-Project The Light homework #1
+# The Light
+
+## Project The Light homework #1
 
